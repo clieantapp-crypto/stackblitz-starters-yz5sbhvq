@@ -41,8 +41,8 @@ export default function HomePage() {
       {load && <FullPageLoader />}
       {/* Ambient green accents */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 -right-20 h-72 w-72 rounded-full bg-[#22c55e]/20 blur-3xl" />
-        <div className="absolute -bottom-40 -left-20 h-72 w-72 rounded-full bg-[#22c55e]/20 blur-3xl" />
+        <div className="absolute -top-40 -right-20 h-72 w-72 rounded-full bg-pink-600/20 blur-3xl" />
+        <div className="absolute -bottom-40 -left-20 h-72 w-72 rounded-full bg-pink-600/20 blur-3xl" />
         <div
           className="absolute inset-0 opacity-[0.05]"
           style={{
@@ -59,9 +59,9 @@ export default function HomePage() {
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/logooap.png"
+                src="/opengrap.png"
                 alt="logo"
-                className="h-9 w-9 rounded-full ring-2 ring-[#22c55e]/60 shadow-sm"
+                className="h-9 w-9 rounded-full ring-2 ring-pink-600 /60 shadow-sm"
               />
               <span className="text-sm text-white hidden sm:inline font-medium">
                 لوحة الروابط
@@ -95,13 +95,13 @@ export default function HomePage() {
       <main className="container mx-auto px-4 py-12 max-w-2xl">
         {/* Profile */}
         <div className="flex flex-col items-center text-center mb-12">
-          <Avatar className="h-20 w-20 mb-6 ring-1 ring-[#22c55e] shadow-[0_0_40px_-10px] shadow-[#22c55e]/60">
-            <AvatarImage src="/logooap.png" alt="الصورة الشخصية" />
+          <Avatar className="h-20 w-20 mb-6 ring-1 ring-pink-600  shadow-[0_0_40px_-10px] shadow-pink-600 /60">
+            <AvatarImage src="/opengrap.png" alt="الصورة الشخصية" />
             <AvatarFallback className="text-3xl bg-white text-white">
             </AvatarFallback>
           </Avatar>
-          <h3 className="flex font-bold">
-            قائمة الخدمات<img src="/verified.png" alt="logo" width={25} />
+          <h3 className="flex font-bold text-2xl">
+            قائمة الخدمات
 
           </h3>
           <p className="mt-3 text-xsm text-white/70 max-w-prose">
@@ -113,7 +113,7 @@ export default function HomePage() {
         <div className="space-y-4 mb-12">
           {items.map(({ title, href, Icon }, i) => (
             <div key={i}>
-              <Card className="group relative border-[#22c55e]/30 bg-[#1f1f1f]/60 hover:bg-[#2a2a2a]/70 transition-all duration-300 rounded-2xl overflow-hidden">
+              <Card className="group relative border-pink-600 /30 bg-[#1f1f1f]/60 hover:bg-[#2a2a2a]/70 transition-all duration-300 rounded-2xl overflow-hidden">
                 <Link
                   href={href}
                   className="flex items-center justify-between p-5 sm:p-6 gap-4"
@@ -121,7 +121,7 @@ export default function HomePage() {
                 >
                   <div className="flex items-center gap-4">
                     <div className="h-12 w-12 rounded-xl bg-white/10 border border-white/30 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                      <Icon className="h-6 w-6 text-[#22c55e]" />
+                      <Icon className="h-6 w-6 text-pink-600 " />
                     </div>
                     <div className="text-right">
                       <h3 className="font-semibold text-base text-white">
@@ -143,7 +143,7 @@ export default function HomePage() {
         </div>
 
         {/* Security */}
-        <Card className="p-6 sm:p-7 bg-[#1f1f1f]/60 border-[#22c55e]/30">
+        <Card className="p-6 sm:p-7 bg-[#1f1f1f]/60 border-pink-600 /30">
           <div className="flex items-start gap-4">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 border border-white/30">
               <ShieldCheck className="h-5 w-5 text-white" />
